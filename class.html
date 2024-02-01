@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="student"></div>
+    <script>
+fetch('second.xml')
+    .then(response => response.text())
+    .then(data => {
+      var parser = new DOMParser();
+      var xmlDoc = parser.parseFromString(data, 'application/xml');
+      // Process xmlDoc as needed
+
+     
+      //name.textContent = xmlDoc.getElementsByTagName('to')[0].childNodes[0].nodeValue;
+      console.log(xmlDoc);
+    })
+    .catch(error => console.error('Error loading XML:', error));
+    </script>
+</body>
+</html>

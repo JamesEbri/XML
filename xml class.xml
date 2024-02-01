@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!--every xml file must need a parent tag i.e note.-->
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Dont forget me this weekend</body>
+<date>5-10-1999</date>
+
+<man age="15"><?man>
+<man>Trump</man>
+<text>5 is &lt; than 7</text>
+
+</note>body
